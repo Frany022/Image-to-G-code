@@ -3,7 +3,7 @@
 #include "raylib.h"
 #include <math.h>
 
-#define IMG_SIZE 300
+#define IMG_SIZE 180
 #define INDEX(x, y) ((y) * IMG_SIZE + (x))
 
 int sobelKernelX[3][3] = {
