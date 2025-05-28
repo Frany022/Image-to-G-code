@@ -16,9 +16,7 @@ int main(int argc, char** argv) {
         return 1;
     }
 
-
     cv::resize(img, img, cv::Size(180, 180));
-
 
     cv::Mat blurred;
     cv::GaussianBlur(img, blurred, cv::Size(5, 5), 0);
@@ -67,7 +65,6 @@ int main(int argc, char** argv) {
             gcodeFile << "G1 X" << X << " Y" << Y << "\n";
         }
 
-        // Close the contour
         gcodeFile << "G1 X" << startX << " Y" << startY << "\n";
         gcodeFile << "G0 Z5 ; Pen up\n";
     }
